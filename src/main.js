@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
+import hello from './components/HelloWorld'
 
 Vue.config.productionTip = false
 
@@ -9,10 +10,8 @@ Vue.config.devtools = true
 
 Vue.use(VueRouter)
 
-const Foo = { template: '<div>foo is this.</div>' }
-
 const routes = [
-  { path: '/foo', component: Foo }
+  { path: '/foo', component: hello }
 ]
 
 const router = new VueRouter({
